@@ -38,23 +38,11 @@ footer{padding:25px 7%;display:flex;justify-content:space-between;font-size:12px
 
 .work-intro{color:#666;margin:-10px 0 25px}.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}.filter{border:1px solid var(--line);background:white;padding:11px 17px;border-radius:30px;font-weight:700;cursor:pointer}.filter.active,.filter:hover{background:var(--ink);color:white;border-color:var(--ink)}.project-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.cover{height:245px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;color:white;position:relative;overflow:hidden}.cover:before{content:"";position:absolute;width:180px;height:180px;border:2px solid rgba(255,255,255,.35);border-radius:50%;right:-50px;top:-50px}.cover>*{position:relative}.cover span{font-size:11px;font-weight:800;letter-spacing:2px}.cover strong{font-size:34px;line-height:1;margin:10px 0 7px}.cover small{font-size:13px}.c1{background:linear-gradient(135deg,#151b35,#7c4dff)}.c2{background:linear-gradient(135deg,#062b4f,#11a9d8)}.c3{background:linear-gradient(135deg,#161616,#e33b55)}.c4{background:linear-gradient(135deg,#3d145f,#e34ab4)}.c5{background:linear-gradient(135deg,#f06b25,#ffcf4a)}.c6{background:linear-gradient(135deg,#252525,#8e7dff)}.c7{background:linear-gradient(135deg,#e53e3e,#ffb347)}.c8{background:linear-gradient(135deg,#3c2017,#c98245)}.c9{background:linear-gradient(135deg,#11184f,#ff3e9d)}.c10{background:linear-gradient(135deg,#ed5c75,#7b2cbf)}.c11{background:linear-gradient(135deg,#121212,#777)}.c12{background:linear-gradient(135deg,#164c3b,#75c79b)}.empty{display:none;padding:40px;background:white;border-radius:12px;color:#666}.project-item.hide{display:none}@media(max-width:900px){.project-gallery{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.project-gallery{grid-template-columns:1fr}.cover{height:220px}.filters{gap:7px}.filter{font-size:12px;padding:9px 12px}}
 
-.admin-open{border:1px solid var(--line);background:white;padding:9px 14px;border-radius:8px;font-weight:800;cursor:pointer}
-.admin-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:100;overflow:auto;padding:30px}
-.admin-box{max-width:760px;margin:30px auto;background:var(--bg);border-radius:16px;padding:30px;position:relative;box-shadow:0 20px 70px rgba(0,0,0,.3)}
-.close-admin{position:absolute;right:18px;top:14px;border:0;background:none;font-size:30px;cursor:pointer}
-.admin-box h2{font-size:30px;letter-spacing:-1px;margin-bottom:8px}.admin-box p{color:#666;margin-bottom:20px}
-.admin-box input,.admin-box select{width:100%;padding:13px;margin:7px 0;border:1px solid var(--line);border-radius:8px;background:white;font:inherit}
-.admin-btn{width:100%;padding:13px;background:var(--ink);color:white;border:0;border-radius:8px;font-weight:800;cursor:pointer;margin-top:8px}
-.admin-top{display:flex;justify-content:space-between;align-items:start}.logout{border:1px solid var(--line);background:white;padding:9px 13px;border-radius:7px;cursor:pointer}
-.admin-form{border:1px solid var(--line);padding:18px;border-radius:10px;background:white;margin:20px 0}
-.admin-projects{display:grid;gap:10px;margin:15px 0}.admin-row{background:white;border:1px solid var(--line);padding:12px;border-radius:9px;display:flex;justify-content:space-between;align-items:center}.admin-row button{background:#b9362b;color:white;border:0;border-radius:6px;padding:8px 11px;cursor:pointer}
-#loginMessage{color:#b9362b;display:block;margin-top:8px}
-@media(max-width:700px){.admin-open{margin-left:auto;margin-right:10px}.admin-box{padding:22px 16px}.admin-modal{padding:10px}}
 </style>
 </head>
 <body>
 <nav>
-  <div class="logo">HARSH<span>.</span></div><button class="admin-open" onclick="openAdmin()">Admin</button>
+  <div class="logo">HARSH<span>.</span></div>
   <ul><li><a href="#home">Home</a></li><li><a href="#about">About Me</a></li><li><a href="#skills">Skills</a></li><li><a href="#software">Software</a></li><li><a href="#work">My Work</a></li><li><a href="#contact">Contact</a></li></ul>
 </nav>
 
@@ -104,21 +92,17 @@ footer{padding:25px 7%;display:flex;justify-content:space-between;font-size:12px
 <button class="filter" data-filter="video">Video Editing</button>
 </div>
 <div class="project-gallery">
-<a class="project project-item uiux" href="https://www.behance.net/gallery/230288421/GAMING-APP-(Nexplay)-uiux-case-study" target="_blank"><div class="cover c1"><span>UI/UX</span><strong>NEXPLAY</strong><small>Gaming App Case Study</small></div><div class="info"><h3>Nexplay Gaming App</h3><p>UI/UX Design</p></div></a>
-<a class="project project-item uiux" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c2"><span>UI/UX</span><strong>THARZO</strong><small>Smart Banking App</small></div><div class="info"><h3>Tharzo Smart Banking</h3><p>UI/UX Design</p></div></a>
-<a class="project project-item uiux" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c3"><span>UI/UX</span><strong>CINIFLIX</strong><small>Movie App Interface</small></div><div class="info"><h3>Ciniflix App</h3><p>UI/UX Design</p></div></a>
-<a class="project project-item uiux" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c4"><span>UI/UX</span><strong>MUSIC</strong><small>Mobile App Design</small></div><div class="info"><h3>Music App</h3><p>UI/UX Design</p></div></a>
-<a class="project project-item uiux" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c5"><span>UI/UX</span><strong>HARSH</strong><small>Food Delivery App</small></div><div class="info"><h3>Harsh Food Delivery App</h3><p>UI/UX Design</p></div></a>
-<a class="project project-item uiux" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c6"><span>UI/UX</span><strong>FASHION</strong><small>Website Design</small></div><div class="info"><h3>Fashion Website</h3><p>UI/UX Design</p></div></a>
-
-<a class="project project-item graphic" href="https://www.behance.net/gallery/253310237/Social-Media-Advertisement-Design" target="_blank"><div class="cover c7"><span>GRAPHIC</span><strong>ADS</strong><small>Social Media Campaign</small></div><div class="info"><h3>Social Media Advertisement</h3><p>Graphic Design</p></div></a>
-<a class="project project-item graphic" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c8"><span>GRAPHIC</span><strong>COFFEE</strong><small>Instagram Carousel</small></div><div class="info"><h3>Luxury Coffee Carousel</h3><p>Graphic Design</p></div></a>
-<a class="project project-item graphic" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c9"><span>GRAPHIC</span><strong>SYNTHFEST</strong><small>Retro Music Poster</small></div><div class="info"><h3>SynthFest 2026 Poster</h3><p>Graphic Design</p></div></a>
-<a class="project project-item graphic" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c10"><span>GRAPHIC</span><strong>INSTAGRAM</strong><small>Carousel Design</small></div><div class="info"><h3>Instagram Carousel</h3><p>Graphic Design</p></div></a>
-
-<a class="project project-item video" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c11"><span>VIDEO</span><strong>DIRECTOR'S</strong><small>Creative Supercut</small></div><div class="info"><h3>Director's Supercut</h3><p>Video Editing</p></div></a>
-<a class="project project-item video" href="https://www.behance.net/harshavardhana7" target="_blank"><div class="cover c12"><span>VIDEO</span><strong>RUN</strong><small>Character Animation</small></div><div class="info"><h3>Character Run Cycle</h3><p>Video Editing</p></div></a>
-
+<a class="project project-item uiux" href="https://www.behance.net/gallery/251105069/Tharzo-Smart-Banking-UIUX" target="_blank"><div class="cover c2"><span>UI/UX</span><strong>THARZO</strong><small>Smart Banking App</small></div><div class="info"><h3>Tharzo Smart Banking</h3><p>UI/UX Design</p></div></a>
+<a class="project project-item uiux" href="https://www.behance.net/gallery/230288421/GAMING-APP-(Nexplay)-uiux-case-study" target="_blank"><div class="cover c1" style="background:linear-gradient(rgba(0,0,0,.28),rgba(0,0,0,.5)),url('nexplay-logo.png') center/cover no-repeat"><span>UI/UX</span><strong>NEXPLAY</strong><small>Gaming App Case Study</small></div><div class="info"><h3>Nexplay Gaming App</h3><p>UI/UX Design</p></div></a>
+<a class="project project-item uiux" href="https://www.behance.net/gallery/231125067/CINIFLIX-APP" target="_blank"><div class="cover c3"><span>UI/UX</span><strong>CINIFLIX</strong><small>Movie App Interface</small></div><div class="info"><h3>Ciniflix App</h3><p>UI/UX Design</p></div></a>
+<a class="project project-item graphic" href="https://www.behance.net/gallery/250199433/MOVIE-POSTERS" target="_blank"><div class="cover c9"><span>GRAPHIC</span><strong>MOVIE</strong><small>Movie Poster Collection</small></div><div class="info"><h3>Movie Posters</h3><p>Graphic Design</p></div></a>
+<a class="project project-item graphic" href="https://www.behance.net/gallery/230973977/Flyer-Design" target="_blank"><div class="cover c10"><span>GRAPHIC</span><strong>FLYER</strong><small>Creative Flyer Design</small></div><div class="info"><h3>Flyer Design</h3><p>Graphic Design</p></div></a>
+<a class="project project-item graphic" href="https://www.behance.net/gallery/253310237/Social-Media-Advertisement-Design" target="_blank"><div class="cover c7"><span>GRAPHIC</span><strong>ADS</strong><small>Social Media Advertisement Design</small></div><div class="info"><h3>Social Media Advertisement</h3><p>Graphic Design</p></div></a>
+<a class="project project-item graphic" href="https://www.behance.net/gallery/251848091/Luxury-Coffee-Instagram-Carousel" target="_blank"><div class="cover c8"><span>GRAPHIC</span><strong>COFFEE</strong><small>Luxury Instagram Carousel</small></div><div class="info"><h3>Luxury Coffee Carousel</h3><p>Graphic Design</p></div></a>
+<a class="project project-item graphic" href="https://www.behance.net/gallery/229397381/Fashion-Website-(Wix-Studio)" target="_blank"><div class="cover c6"><span>GRAPHIC</span><strong>FASHION</strong><small>Wix Studio Website</small></div><div class="info"><h3>Fashion Website</h3><p>Graphic Design</p></div></a>
+<a class="project project-item graphic" href="https://www.behance.net/gallery/251847533/SynthFest-2026-Retro-Music-Festival-Poster-Design" target="_blank"><div class="cover c9"><span>GRAPHIC</span><strong>SYNTHFEST</strong><small>Retro Music Festival Poster</small></div><div class="info"><h3>SynthFest 2026 Poster</h3><p>Graphic Design</p></div></a>
+<a class="project project-item graphic" href="https://www.behance.net/gallery/229981829/INSTAGRAM-CAROUSEL" target="_blank"><div class="cover c10"><span>GRAPHIC</span><strong>INSTAGRAM</strong><small>Carousel Design</small></div><div class="info"><h3>Instagram Carousel</h3><p>Graphic Design</p></div></a>
+<a class="project project-item video" href="https://www.behance.net/gallery/229550495/Directors-Supercut" target="_blank"><div class="cover c11"><span>VIDEO</span><strong>DIRECTOR'S</strong><small>Creative Supercut</small></div><div class="info"><h3>Director's Supercut</h3><p>Video Editing</p></div></a>
 <div class="empty">No projects in this category yet.</div>
 </div>
 </section>
@@ -139,63 +123,6 @@ footer{padding:25px 7%;display:flex;justify-content:space-between;font-size:12px
 <script>
 const buttons=document.querySelectorAll(".filter"),items=document.querySelectorAll(".project-item"),empty=document.querySelector(".empty");
 buttons.forEach(b=>b.addEventListener("click",()=>{buttons.forEach(x=>x.classList.remove("active"));b.classList.add("active");let f=b.dataset.filter,count=0;items.forEach(i=>{let show=f==="all"||i.classList.contains(f);i.classList.toggle("hide",!show);if(show)count++});empty.style.display=count?"none":"block"}));
-</script>
-<div id="adminModal" class="admin-modal">
-  <div class="admin-box">
-    <button class="close-admin" onclick="closeAdmin()">×</button>
-    <div id="loginPanel">
-      <h2>Admin Login</h2>
-      <p>Sign in to manage portfolio projects.</p>
-      <input id="adminEmail" type="email" placeholder="Email">
-      <input id="adminPassword" type="password" placeholder="Password">
-      <button class="admin-btn" onclick="adminLogin()">Login</button>
-      <small id="loginMessage"></small>
-    </div>
-    <div id="dashboardPanel" style="display:none">
-      <div class="admin-top"><div><h2>Manage Projects</h2><p>Add, edit, or remove projects.</p></div><button class="logout" onclick="adminLogout()">Logout</button></div>
-      <div class="admin-form">
-        <input id="projectTitle" placeholder="Project title">
-        <select id="projectCategory"><option value="uiux">UI/UX Design</option><option value="graphic">Graphic Design</option><option value="brand">Brand Design</option><option value="video">Video Editing</option></select>
-        <input id="projectLink" placeholder="Behance project link">
-        <input id="projectImage" type="file" accept="image/*">
-        <button class="admin-btn" onclick="addProject()">Add Project</button>
-      </div>
-      <div id="adminProjects" class="admin-projects"></div>
-      <small>Changes are saved in this browser. They will not affect the public website after uploading unless you use a real backend.</small>
-    </div>
-  </div>
-</div>
-
-<script>
-const ADMIN_EMAIL="harshavardhan4278@gmail.com";
-const ADMIN_PASSWORD="Harsha@4278";
-function openAdmin(){document.getElementById("adminModal").style.display="block";renderAdminProjects()}
-function closeAdmin(){document.getElementById("adminModal").style.display="none"}
-function adminLogin(){
- const e=document.getElementById("adminEmail").value.trim(),p=document.getElementById("adminPassword").value;
- if(e===ADMIN_EMAIL&&p===ADMIN_PASSWORD){sessionStorage.setItem("portfolioAdmin","yes");document.getElementById("loginPanel").style.display="none";document.getElementById("dashboardPanel").style.display="block";renderAdminProjects()}
- else document.getElementById("loginMessage").textContent="Incorrect email or password.";
-}
-function adminLogout(){sessionStorage.removeItem("portfolioAdmin");document.getElementById("loginPanel").style.display="block";document.getElementById("dashboardPanel").style.display="none"}
-function getAdded(){return JSON.parse(localStorage.getItem("addedPortfolioProjects")||"[]")}
-function saveAdded(x){localStorage.setItem("addedPortfolioProjects",JSON.stringify(x))}
-function addProject(){
- const title=document.getElementById("projectTitle").value.trim(),cat=document.getElementById("projectCategory").value,link=document.getElementById("projectLink").value.trim(),file=document.getElementById("projectImage").files[0];
- if(!title||!link){alert("Please enter a project title and link.");return}
- const finish=(image)=>{let a=getAdded();a.push({id:Date.now(),title,cat,link,image});saveAdded(a);location.reload()}
- if(file){let r=new FileReader();r.onload=()=>finish(r.result);r.readAsDataURL(file)}else finish("")
-}
-function removeProject(id){saveAdded(getAdded().filter(x=>x.id!==id));location.reload()}
-function renderAdminProjects(){
- if(sessionStorage.getItem("portfolioAdmin")==="yes"){document.getElementById("loginPanel").style.display="none";document.getElementById("dashboardPanel").style.display="block"}
- const box=document.getElementById("adminProjects");if(!box)return;
- box.innerHTML=getAdded().map(x=>`<div class="admin-row"><span><b>${x.title}</b><br><small>${x.cat}</small></span><button onclick="removeProject(${x.id})">Remove</button></div>`).join("")||"<p>No admin-added projects yet.</p>";
-}
-function loadAddedProjects(){
- const gallery=document.querySelector(".project-gallery");if(!gallery)return;
- getAdded().forEach(x=>{let a=document.createElement("a");a.className=`project project-item ${x.cat}`;a.href=x.link;a.target="_blank";a.innerHTML=`<div class="cover" style="${x.image?`background:url('${x.image}') center/cover`:''}"><span>${x.cat.toUpperCase()}</span><strong>${x.title}</strong><small>View project ↗</small></div><div class="info"><h3>${x.title}</h3><p>${x.cat==="uiux"?"UI/UX Design":x.cat==="graphic"?"Graphic Design":x.cat==="brand"?"Brand Design":"Video Editing"}</p></div>`;gallery.insertBefore(a,gallery.querySelector(".empty"))})
-}
-loadAddedProjects();
 </script>
 </body>
 </html>
